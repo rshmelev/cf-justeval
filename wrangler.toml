@@ -1,0 +1,14 @@
+name = "cf-justeval"
+type = "javascript"
+compatibility_date = "2021-10-21"
+route=""
+workers_dev = true
+kv_namespaces = [
+    { binding = "KV", id = "" }
+]
+vars = {  }
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"

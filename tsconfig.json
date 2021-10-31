@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["esnext", "webworker"],
+
+    "declaration": false /* Generates corresponding '.d.ts' file. */,
+    "declarationMap": false /* Generates a sourcemap for each corresponding '.d.ts' file. */,
+    "sourceMap": true /* Generates corresponding '.map' file. */,
+
+    "outDir": "./dist",
+    "rootDir": "src",
+
+    "alwaysStrict": true,
+    "strict": true,
+    "noImplicitAny": true,
+
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+
+    "esModuleInterop": true,
+    "types": [
+      "@cloudflare/workers-types",
+      "@types/jest",
+      "@types/service-worker-mock"
+    ]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "test"]
+}
